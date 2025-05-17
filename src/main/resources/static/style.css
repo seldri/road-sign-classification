@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .image-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Form Container */
+.form-container {
+    flex: 0 0 45%;
+    min-width: 300px;
+    padding: 20px;
+    border: 2px solid #001f5b;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.image-container {
+    flex: 0 0 45%;
+    min-width: 300px;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5vw;
+    margin-bottom: 15px;
+    color: #001f5b;
+}
+
+h2 {
+    font-size: 1.5vw;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2vw;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Image Styles */
+.landing-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Label and Input Styles */
+label {
+    font-size: 1.1vw;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    font-size: 1.1vw;
+    padding: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.1vw;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2, label {
+        font-size: 4vw;
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 10px 20px;
+    }
+
+    input[type="file"] {
+        font-size: 4vw;
+    }
+}

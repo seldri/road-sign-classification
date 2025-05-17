@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Road Sign Classification">
+    <title>Road Sign Classification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="form-container">
+                <h1 class="title">Road Sign Classification</h1>
+                <p class="subtitle">Upload your German road sign for classification!</p>
+                <form id="uploadForm">
+                    <label for="fileInput">Choose a file:</label>
+                    <input type="file" id="imageFile" name="file" accept="image/*" required>
+                    <button type="submit">Upload and Classify</button>
+                </form>
+                <div id="result"></div>
+            </div>
+            <div class="image-container">
+                <img src="landing.jpg" alt="Landing Image" class="landing-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
