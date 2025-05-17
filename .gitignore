@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Large Model Files
+src/main/resources/models/gtsrb-model.onnx
+pytorch_model/pytorch_model.bin
